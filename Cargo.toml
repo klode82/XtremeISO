@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = ["crates/xtremeiso-core", "crates/xtremeiso-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+clap = { version = "4", features = ["derive"] }
